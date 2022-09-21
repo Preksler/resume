@@ -1,0 +1,257 @@
+:root {
+    --white-color: #ffffff;
+    --left-column-bg: #e1d8cf;
+    --title-bg: #373741;
+    --header-bg-color: #373741;
+    --title-text-color: #e1d8cf;
+    --main-color: #373741;
+}
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6,
+p {
+    margin: 0;
+    padding: 0;
+}
+
+ul {
+    margin: 0;
+    padding: 0;
+    list-style: none;
+}
+
+li {
+    list-style-type: none;
+}
+
+a {
+    text-decoration: none;
+}
+
+img {
+    display: block;
+    max-width: 100%;
+    height: auto;
+}
+
+body {
+    font-family: 'Lato', sans-serif;
+    background-color: var(--white-color);
+    color: var(--main-color);
+    font-size: 14px;
+}
+
+.container {
+    width: 100%;
+    padding-left: 15px;
+    padding-right: 15px;
+    margin: 0 auto;
+}
+
+@media screen and (min-width: 480px) {
+    .container {
+        width: 480px;
+    }
+}
+
+@media screen and (min-width: 768px) {
+    .container {
+        width: 768px;
+    }
+}
+
+@media screen and (min-width: 1024px) {
+    .container {
+        width: 1024px;
+    }
+}
+
+.wrapper {
+    display: flex;
+}
+
+.box-wrapper {
+    margin-bottom: 12px;
+}
+
+.content-wrapper {
+    padding: 0 7px;
+}
+
+.title {
+    padding: 10px;
+    margin-bottom: 12px;
+    font-family: 'Podkova', serif;
+    font-size: 20px;
+    font-weight: 600;
+    line-height: 1.2;
+    letter-spacing: 0.82;
+    color: var(--title-text-color);
+    background-color: var(--title-bg);
+    text-transform: uppercase;
+}
+
+.left-column {
+    width: 424px;
+    padding: 27px 20px;
+    background-color: #e1d8cf;
+}
+
+.my-photo {
+    border-radius: 50%;
+    margin-bottom: 27px;
+}
+
+.contacts-link {
+    font-size: 14px;
+    font-weight: 400;
+    line-height: 1.33;
+    font-style: normal;
+    color: var(--main-color);
+}
+
+.tech-skills-list {
+    margin-left: 14px;
+}
+
+.tech-skills-item {
+    list-style-type: disc;
+}
+
+.soft-skills-item {
+    line-height: 1.2;
+}
+
+.language-skills-item {
+    line-height: 1.34;
+}
+
+.right-column {
+    width: 600px;
+    margin-top: 12px;
+}
+
+.header {
+    padding: 12px 27px;
+    margin-bottom: 22px;
+    background-color: var(--header-bg-color);
+}
+
+.name-surname {
+    font-family: 'Podkova', serif;
+    font-size: 36px;
+    font-weight: 600;
+    line-height: 1.2;
+    color: var(--title-text-color);
+    text-transform: uppercase;
+    text-align: center;
+}
+
+.position {
+    margin-bottom: 22px;
+    font-size: 18px;
+    font-weight: 700;
+    line-height: 1.2;
+    letter-spacing: 1.56;
+    color: var(--white-color);
+    text-transform: uppercase;
+    text-align: center;
+}
+
+.summary {
+    margin-bottom: 14px;
+    font-family: 'Podkova', serif;
+    font-size: 20px;
+    font-weight: 600;
+    line-height: 1.2;
+    letter-spacing: 0.81;
+    color: var(--title-text-color);
+    text-transform: uppercase;
+}
+
+.summery-text {
+    line-height: 1.09;
+    color: var(--white-color);
+    text-align: justify;
+}
+
+.right-column-wrapper {
+    padding: 0 20px;
+}
+
+.projects-item:not(:last-child) {
+    margin-bottom: 9px;
+}
+
+.projects-link {
+    display: block;
+    font-size: 18px;
+    font-weight: 700;
+    line-height: 1.2;
+    color: var(--main-color);
+}
+
+.projects-link-code {
+    display: block;
+    font-size: 16px;
+    font-weight: 700;
+    line-height: 1.2;
+    color: var(--main-color);
+    text-decoration: underline;
+}
+
+.projects-description {
+    line-height: 1.2;
+}
+
+.work-last {
+    margin-bottom: 9px;
+    font-size: 18px;
+    font-weight: 700;
+    line-height: 1.2;
+}
+
+.work-responsibilities-list,
+.work-achievements-list {
+    margin-left: 14px;
+}
+
+.work-responsibilities-item,
+.work-achievements-item {
+    line-height: 1.2;
+    list-style-type: disc;
+}
+
+.education-item:not(:last-child) {
+    margin-bottom: 9px;
+}
+
+.education-text {
+    font-size: 18px;
+    font-weight: 700;
+    line-height: 1.2;
+}
+
+.education-description {
+    line-height: 1.33;
+}
+
+/* 0.1 = 2.25px */
+/* 0.3 = 7px */
+/* 0.4 = 9px */
+/* 0.5 = 12px */
+/* 0.6 = 14px */
+/* 0.9 = 20px */
+/* 1.0 = 22px */
+/* 1.2 = 27px */
+
+/* 8.7 = left 424px */
+/* 12.3 = right 600px */
+
+/* left = 520px */
+/* right = 760px */
+/* 210 = 1280px */
