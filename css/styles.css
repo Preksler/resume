@@ -72,6 +72,7 @@ body {
 
 .wrapper {
     display: flex;
+    justify-content: center;
 }
 
 .box-wrapper {
@@ -83,10 +84,10 @@ body {
 }
 
 .title {
-    padding: 10px;
+    padding: 5px;
     margin-bottom: 12px;
     font-family: 'Podkova', serif;
-    font-size: 20px;
+    font-size: 16px;
     font-weight: 600;
     line-height: 1.2;
     letter-spacing: 0.82;
@@ -95,10 +96,36 @@ body {
     text-transform: uppercase;
 }
 
+@media screen and (min-width: 768px) {
+    .title {
+        padding: 8px;
+        font-size: 18px;
+    }
+}
+
+@media screen and (min-width: 1024px) {
+    .title {
+        padding: 10px;
+        font-size: 20px;
+    }
+}
+
 .left-column {
-    width: 424px;
+    width: 200px;
     padding: 27px 20px;
     background-color: #e1d8cf;
+}
+
+@media screen and (min-width: 768px) {
+    .left-column {
+        width: 318px;
+    }
+}
+
+@media screen and (min-width: 1024px) {
+    .left-column {
+        width: 424px;
+    }
 }
 
 .my-photo {
@@ -107,11 +134,23 @@ body {
 }
 
 .contacts-link {
-    font-size: 14px;
+    font-size: 10px;
     font-weight: 400;
     line-height: 1.33;
     font-style: normal;
     color: var(--main-color);
+}
+
+@media screen and (min-width: 768px) {
+    .contacts-link {
+        font-size: 12px;
+    }
+}
+
+@media screen and (min-width: 1024px) {
+    .contacts-link {
+        font-size: 14px;
+    }
 }
 
 .tech-skills-list {
@@ -119,20 +158,75 @@ body {
 }
 
 .tech-skills-item {
+    font-size: 10px;
+    font-weight: 400;
+    line-height: 1.33;
     list-style-type: disc;
 }
 
+@media screen and (min-width: 768px) {
+    .tech-skills-item {
+        font-size: 12px;
+    }
+}
+
+@media screen and (min-width: 1024px) {
+    .tech-skills-item {
+        font-size: 14px;
+    }
+}
+
 .soft-skills-item {
+    font-size: 10px;
+    font-weight: 400;
     line-height: 1.2;
 }
 
+@media screen and (min-width: 768px) {
+    .soft-skills-item {
+        font-size: 12px;
+    }
+}
+
+@media screen and (min-width: 1024px) {
+    .soft-skills-item {
+        font-size: 14px;
+    }
+}
+
 .language-skills-item {
+    font-size: 10px;
+    font-weight: 400;
     line-height: 1.34;
 }
 
+@media screen and (min-width: 768px) {
+    .language-skills-item {
+        font-size: 12px;
+    }
+}
+
+@media screen and (min-width: 1024px) {
+    .language-skills-item {
+        font-size: 14px;
+    }
+}
+
 .right-column {
-    width: 600px;
+    width: 280px;
     margin-top: 12px;
+}
+
+@media screen and (min-width: 768px) {
+    .right-column {
+        width: 450px;
+    }
+}
+
+@media screen and (min-width: 1024px) {
+    .right-column {
+        width: 600px;
+    }
 }
 
 .header {
@@ -143,7 +237,7 @@ body {
 
 .name-surname {
     font-family: 'Podkova', serif;
-    font-size: 36px;
+    font-size: 24px;
     font-weight: 600;
     line-height: 1.2;
     color: var(--title-text-color);
@@ -151,9 +245,21 @@ body {
     text-align: center;
 }
 
+@media screen and (min-width: 768px) {
+    .name-surname {
+        font-size: 30px;
+    }
+}
+
+@media screen and (min-width: 1024px) {
+    .name-surname {
+        font-size: 36px;
+    }
+}
+
 .position {
     margin-bottom: 22px;
-    font-size: 18px;
+    font-size: 12px;
     font-weight: 700;
     line-height: 1.2;
     letter-spacing: 1.56;
@@ -162,25 +268,56 @@ body {
     text-align: center;
 }
 
+@media screen and (min-width: 768px) {
+    .position {
+        font-size: 14px;
+    }
+}
+
+@media screen and (min-width: 1024px) {
+    .position {
+        font-size: 18px;
+    }
+}
+
 .summary {
+    padding: 0;
     margin-bottom: 14px;
-    font-family: 'Podkova', serif;
-    font-size: 20px;
-    font-weight: 600;
-    line-height: 1.2;
-    letter-spacing: 0.81;
-    color: var(--title-text-color);
-    text-transform: uppercase;
 }
 
 .summery-text {
-    line-height: 1.09;
+    font-size: 10px;
+    line-height: 1.1;
     color: var(--white-color);
     text-align: justify;
 }
 
+@media screen and (min-width: 768px) {
+    .summery-text {
+        font-size: 12px;
+    }
+}
+
+@media screen and (min-width: 1024px) {
+    .summery-text {
+        font-size: 14px;
+    }
+}
+
 .right-column-wrapper {
-    padding: 0 20px;
+    padding: 0 10px;
+}
+
+@media screen and (min-width: 768px) {
+    .right-column-wrapper {
+        padding: 0 15px;
+    }
+}
+
+@media screen and (min-width: 1024px) {
+    .right-column-wrapper {
+        padding: 0 20px;
+    }
 }
 
 .projects-item:not(:last-child) {
@@ -189,41 +326,125 @@ body {
 
 .projects-link {
     display: block;
-    font-size: 18px;
+    font-size: 14px;
     font-weight: 700;
     line-height: 1.2;
     color: var(--main-color);
 }
 
+@media screen and (min-width: 768px) {
+    .projects-link {
+        font-size: 16px;
+    }
+}
+
+@media screen and (min-width: 1024px) {
+    .projects-link {
+        font-size: 18px;
+    }
+}
+
 .projects-link-code {
     display: block;
-    font-size: 16px;
+    font-size: 12px;
     font-weight: 700;
     line-height: 1.2;
     color: var(--main-color);
     text-decoration: underline;
 }
 
+@media screen and (min-width: 768px) {
+    .projects-link-code {
+        font-size: 14px;
+    }
+}
+
+@media screen and (min-width: 1024px) {
+    .projects-link-code {
+        font-size: 16px;
+    }
+}
+
 .projects-description {
+    font-size: 10px;
     line-height: 1.2;
+}
+
+@media screen and (min-width: 768px) {
+    .projects-description {
+        font-size: 12px;
+    }
+}
+
+@media screen and (min-width: 1024px) {
+    .projects-description {
+        font-size: 14px;
+    }
 }
 
 .work-last {
     margin-bottom: 9px;
-    font-size: 18px;
+    font-size: 12px;
     font-weight: 700;
     line-height: 1.2;
 }
 
+@media screen and (min-width: 768px) {
+    .work-last {
+        font-size: 14px;
+    }
+}
+
+@media screen and (min-width: 1024px) {
+    .work-last {
+        font-size: 18px;
+    }
+}
+
+.work-responsibilities,
+.work-achievements {
+    font-size: 10px;
+    line-height: 1.2;
+}
+
+@media screen and (min-width: 768px) {
+    .work-responsibilities,
+    .work-achievements {
+        font-size: 12px;
+    }
+}
+
+@media screen and (min-width: 1024px) {
+    .work-responsibilities,
+    .work-achievements {
+        font-size: 14px;
+    }
+}
+
 .work-responsibilities-list,
 .work-achievements-list {
-    margin-left: 14px;
+    margin-left: 10px;
 }
 
 .work-responsibilities-item,
 .work-achievements-item {
+    font-size: 10px;
     line-height: 1.2;
     list-style-type: disc;
+}
+
+@media screen and (min-width: 768px) {
+    .work-responsibilities-item,
+    .work-achievements-item {
+        font-size: 12px;
+    }
+}
+
+@media screen and (min-width: 1024px) {
+    .work-responsibilities-item,
+    .work-achievements-item {
+        font-size: 14px;
+    }
 }
 
 .education-item:not(:last-child) {
@@ -231,13 +452,38 @@ body {
 }
 
 .education-text {
-    font-size: 18px;
+    font-size: 12px;
     font-weight: 700;
     line-height: 1.2;
 }
 
+@media screen and (min-width: 768px) {
+    .education-text {
+        font-size: 14px;
+    }
+}
+
+@media screen and (min-width: 1024px) {
+    .education-text {
+        font-size: 18px;
+    }
+}
+
 .education-description {
+    font-size: 10px;
     line-height: 1.33;
+}
+
+@media screen and (min-width: 768px) {
+    .education-description {
+        font-size: 12px;
+    }
+}
+
+@media screen and (min-width: 1024px) {
+    .education-description {
+        font-size: 14px;
+    }
 }
 
 /* 0.1 = 2.25px */
@@ -249,9 +495,19 @@ body {
 /* 1.0 = 22px */
 /* 1.2 = 27px */
 
-/* 8.7 = left 424px */
-/* 12.3 = right 600px */
+/* 21 = 1024px */
+/* 8.7 = left 424px 41.43% */
+/* 12.3 = right 600px 58.57% */
 
-/* left = 520px */
-/* right = 760px */
-/* 210 = 1280px */
+/* 15.75 = 768px */
+/* 6.53 = left 318px*/
+/* 9.22 = right 450px*/
+
+/* 9.85 = 480px */
+/* 4.08 = left 200px */
+/* 5.77 = right 280px*/
+
+
+/* 1024 = 100% */
+/* 768 = 75% */
+/* 480 = 46.88% */
